@@ -17,7 +17,13 @@ const cors = require("cors");
 const app = express();
 const port = 8080;
 
-app.use(cors());
+const corsOptions = {
+    origin: "https://your-frontend-domain.com", // Replace with your actual frontend URL
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+    credentials: true, // Allows cookies and authentication headers
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 
 // connect mongodb to our node app.
