@@ -18,7 +18,7 @@ const app = express();
 const port = 8080;
 
 const corsOptions = {
-    origin: "https://your-frontend-domain.com", // Replace with your actual frontend URL
+    origin: "https://swarsongs.onrender.com", // Replace with your actual frontend URL
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     credentials: true, // Allows cookies and authentication headers
 };
